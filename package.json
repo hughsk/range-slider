@@ -1,0 +1,34 @@
+{
+  "name": "range-slider",
+  "version": "1.0.0",
+  "description": "A simple range slider UI element for use with browserify",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "bundle": "browserify example.js -o bundle.js",
+    "start": "beefy example.js:bundle.js --open"
+  },
+  "author": "Hugh Kennedy <hughskennedy@gmail.com> (http://hughsk.io/)",
+  "dependencies": {
+    "clamp": "^1.0.0",
+    "mouse-position": "^1.0.0"
+  },
+  "devDependencies": {
+    "beefy": "^2.0.1",
+    "browserify": "^4.1.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hughsk/range-slider.git"
+  },
+  "keywords": [
+    "range",
+    "slider",
+    "ui",
+    "browserify"
+  ],
+  "homepage": "https://github.com/hughsk/range-slider",
+  "bugs": {
+    "url": "https://github.com/hughsk/range-slider/issues"
+  }
+}
