@@ -46,11 +46,23 @@ function createSlider(outer, initial, update) {
 
   outer.addEventListener('mousedown', function(e) {
     moving = true
+    updateSelection('none')
   }, false)
 
   window.addEventListener('mouseup', function(e) {
     moving = false
+    updateSelection('initial')
   }, false)
 
   return inner
+}
+
+function updateSelection(value) {
+  var b = document.body.style
+  b.webkitTouchCallout =
+  b.webkitUserSelect =
+  b.khtmlUserSelect =
+  b.mozUserSelect =
+  b.msUserSelect =
+  b.userSelect = value
 }
