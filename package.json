@@ -1,6 +1,6 @@
 {
   "name": "range-slider",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple range slider UI element for use with browserify",
   "main": "index.js",
   "license": "MIT",
