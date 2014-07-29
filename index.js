@@ -21,7 +21,7 @@ function createSlider(outer, initial, update) {
     || position === 'inherit'
   ) outer.style.position = 'relative'
 
-  initial = initial || 0.5
+  initial = typeof initial === 'number' ? initial : 0.5
   inner.style.width = clamp(initial, 0, 1) * 100 + '%'
   inner.style.height = '100%'
   outer.style.cursor = 'ew-resize'
